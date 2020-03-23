@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.task {
+	border: 0.5px solid grey;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	&__title {
+		margin: 0.5em 0;
+	}
+	&__field {
+		display: flex;
+		flex-direction: column;
+		&__input {
+			padding: 0.5em;
+			border-radius: 0.5em;
+			border: 0.5px solid black;
+		}
+		&__button {
+			width: 40%;
+			margin: 0.5em 0;
+			padding: 0.5em;
+			border-radius: 0.5em;
+			background-color: rgb(115, 214, 16);
+			color: white;
+			border: 0.5px solid black;
+			cursor: pointer;
+		}
+	}
+}
+
+.filter {
+	@extend .task;
+	input {
+		@extend .task__field__input;
+	}
+}
+
+.clear-button {
+	@extend .task__field__button;
+	text-decoration: none;
+}
+
+.task-collection {
+	list-style: none;
+	margin: 1em 0em;
+	padding: 0;
+	&__item {
+		background-color: brown;
+		display: flex;
+		justify-content: space-between;
+		padding: 0.8em;
+		border-radius: 0.2em;
+		color: white;
+		margin: 0.1em 0;
+	}
+}
+
+.close {
+	cursor: pointer;
+}

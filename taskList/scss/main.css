@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.task, .filter {
+  border: 0.5px solid grey;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.task__title {
+  margin: 0.5em 0;
+}
+
+.task__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.task__field__input, .filter input {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 0.5px solid black;
+}
+
+.task__field__button, .clear-button {
+  width: 40%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #73d610;
+  color: white;
+  border: 0.5px solid black;
+  cursor: pointer;
+}
+
+.clear-button {
+  text-decoration: none;
+}
+
+.task-collection {
+  list-style: none;
+  margin: 1em 0em;
+  padding: 0;
+}
+
+.task-collection__item {
+  background-color: brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.8em;
+  border-radius: 0.2em;
+  color: white;
+  margin: 0.1em 0;
+}
+
+.close {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

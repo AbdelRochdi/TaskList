@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+            <h1 class="task__title">Task list</h1>
+            <form class="task__field">
+                <input type="text" name="task" id="task" placeholder="New Task" class="task__field__input">
+                <input type="submit" value="Add Task" class="task__field__button">
+            </form>
+        </div>
+
+        <div class="filter">
+            <h2 >Tasks</h2>
+            <div class="filter__field">
+            <input type="text" name="filter" id="filter" placeholder="Filter Tasks">
+        </div>
+        <ul class="task-collection"></ul>
+        <a href="#" class="clear-button"> Clear Tasks</a>
+        </div>
+
+        <img src="images/icon-close.svg" alt="close" class="close">
+        
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
